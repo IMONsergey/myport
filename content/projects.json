@@ -1,54 +1,144 @@
 {
-  "schemaVersion": 1,
-  "researchDate": "2026-10-15",
-  "status": "editorial-draft",
-  "sourceCaveat": "Dprofile is in maintenance mode. Metadata was retrieved from the search index; project year and personal role are not inferred from publication dates or profile association.",
+  "schemaVersion": 2,
+  "updatedAt": "2026-10-15",
   "projects": [
     {
       "id": "avito-avto",
-      "title": "Avito Avto Conf. — Высшая передача",
-      "sourcePublishedAt": "2025-06-12",
-      "sourceCategories": [
-        "Графика",
-        "Маркетинг"
+      "title": "Avito Авто",
+      "kicker": "Высшая передача",
+      "category": "events",
+      "summary": "Визуальная система автомобильной конференции: от первого экрана до сложных данных.",
+      "credit": "Совместно с BAEV / I’MON",
+      "year": "2024",
+      "cover": {
+        "src": "media/avito/02.webp",
+        "width": 1800,
+        "height": 1201,
+        "alt": "Avito Авто — Высшая передача"
+      },
+      "media": [
+        {
+          "src": "media/avito/00.webp",
+          "width": 1800,
+          "height": 1181,
+          "alt": "Avito Авто — Высшая передача"
+        },
+        {
+          "src": "media/avito/03.webp",
+          "width": 1800,
+          "height": 1201,
+          "alt": "Avito Авто — Высшая передача"
+        },
+        {
+          "src": "media/avito/05.webp",
+          "width": 1800,
+          "height": 1013,
+          "alt": "Avito Авто — Высшая передача"
+        },
+        {
+          "src": "media/avito/06.webp",
+          "width": 1800,
+          "height": 1013,
+          "alt": "Avito Авто — Высшая передача"
+        },
+        {
+          "src": "media/avito/07.webp",
+          "width": 1800,
+          "height": 1013,
+          "alt": "Avito Авто — Высшая передача"
+        },
+        {
+          "src": "media/avito/01.webp",
+          "width": 1800,
+          "height": 1534,
+          "alt": "Avito Авто — Высшая передача"
+        }
       ],
-      "projectYear": null,
-      "personalRole": null,
-      "contributors": null,
-      "summary": null,
-      "cover": null,
-      "media": [],
-      "outcomes": [],
+      "sections": [
+        {
+          "title": "Данные, которые держат внимание.",
+          "text": "Конференция Avito Авто объединяет экспертов автомобильного рынка. Здесь презентация работает наравне со сценой: помогает следить за мыслью, видеть тенденции и запоминать главное."
+        },
+        {
+          "title": "Один язык. Разные форматы.",
+          "text": "Контрастный тёмный фон, объёмная графика и цветовые акценты связывают тематические блоки. Диаграммы, продуктовые слайды и сценические экраны собраны в единую визуальную систему."
+        }
+      ],
       "sources": [
         {
           "url": "https://dprofile.ru/case/127005/avito-avto-conf-vyssaia-peredaca",
           "kind": "dprofile-index"
+        },
+        {
+          "url": "https://github.com/IMONsergey/bupd/blob/main/work/avito-auto-2024/index.html",
+          "kind": "project-source"
         }
       ],
+      "live": null,
       "recognition": {
         "platform": "Dprofile",
         "kind": "best",
         "label": "В лучшем на Dprofile",
         "sourceUrl": "https://dprofile.ru/case/127005/avito-avto-conf-vyssaia-peredaca"
       },
-      "editorialStatus": "needs-role-and-media-review",
-      "publishReady": false
+      "publishReady": true
     },
     {
       "id": "orla",
-      "title": "ORLA, Dorchester Collection Dubai",
-      "sourcePublishedAt": "2025-01-03",
-      "sourceCategories": [
-        "Интерфейсы",
-        "Анимация"
+      "title": "ORLA",
+      "kicker": "Dorchester Collection · Dubai",
+      "category": "digital",
+      "summary": "Цифровая презентация резиденций на Palm Jumeirah. Архитектура, пространство и внимание к деталям.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/orla/02.webp",
+        "width": 1800,
+        "height": 1674,
+        "alt": "ORLA — Dorchester Collection · Dubai"
+      },
+      "media": [
+        {
+          "src": "media/orla/06.webp",
+          "width": 1401,
+          "height": 1661,
+          "alt": "ORLA — Dorchester Collection · Dubai"
+        },
+        {
+          "src": "media/orla/04.webp",
+          "width": 988,
+          "height": 1434,
+          "alt": "ORLA — Dorchester Collection · Dubai"
+        },
+        {
+          "src": "media/orla/05.webp",
+          "width": 988,
+          "height": 1434,
+          "alt": "ORLA — Dorchester Collection · Dubai"
+        },
+        {
+          "src": "media/orla/07.webp",
+          "width": 696,
+          "height": 2200,
+          "alt": "ORLA — Dorchester Collection · Dubai"
+        },
+        {
+          "src": "media/orla/03.webp",
+          "width": 1800,
+          "height": 1059,
+          "alt": "ORLA — Dorchester Collection · Dubai"
+        }
       ],
-      "projectYear": null,
-      "personalRole": null,
-      "contributors": null,
-      "summary": null,
-      "cover": null,
-      "media": [],
-      "outcomes": [],
+      "sections": [
+        {
+          "title": "Ощущение места — ещё до визита.",
+          "text": "ORLA — проект OMNIYAT в Дубае. Сайт раскрывает резиденции через архитектуру, виды и атмосферу. Крупные изображения, спокойная типографика и плавный ритм поддерживают характер проекта."
+        },
+        {
+          "title": "От впечатления к выбору.",
+          "text": "За визуальной историей стоит понятная структура: преимущества комплекса, резиденции и их сравнение, условия оплаты и обращение к команде. Эмоциональный образ соединяется с практическим сценарием выбора."
+        }
+      ],
       "sources": [
         {
           "url": "https://dprofile.ru/case/103839/orla-dorchester-collection-dubai",
@@ -59,151 +149,113 @@
           "kind": "agency-case"
         }
       ],
+      "live": null,
       "recognition": {
         "platform": "Dprofile",
         "kind": "recommended",
         "label": "Рекомендуем",
         "sourceUrl": "https://dprofile.ru/case/103839/orla-dorchester-collection-dubai"
       },
-      "editorialStatus": "needs-role-and-media-review",
-      "publishReady": false
+      "publishReady": true
     },
     {
-      "id": "haval",
-      "title": "Haval — Dealer Conference",
-      "sourcePublishedAt": "2025-01-05",
-      "sourceCategories": [
-        "Графика",
-        "Маркетинг"
-      ],
-      "projectYear": null,
-      "personalRole": null,
-      "contributors": null,
-      "summary": null,
-      "cover": null,
-      "media": [],
-      "outcomes": [],
-      "sources": [
-        {
-          "url": "https://dprofile.ru/case/103977/haval-dealer-conference",
-          "kind": "dprofile-index"
-        },
-        {
-          "url": "https://imon.agency/ru/portfolio/haval-dealer-conference/",
-          "kind": "agency-case"
-        }
-      ],
-      "recognition": {
-        "platform": "Dprofile",
-        "kind": "recommended",
-        "label": "Рекомендуем",
-        "sourceUrl": "https://dprofile.ru/case/103977/haval-dealer-conference"
+      "id": "apcosys",
+      "title": "APCOSYS",
+      "kicker": "От запроса к исследованию",
+      "category": "digital",
+      "summary": "Продуктовый сайт для платформы исследования интернет-инфраструктуры.",
+      "credit": "Дизайн и цифровая реализация",
+      "year": null,
+      "cover": {
+        "src": "media/apcosys/00.webp",
+        "width": 1348,
+        "height": 926,
+        "alt": "APCOSYS — От запроса к исследованию"
       },
-      "editorialStatus": "needs-role-and-media-review",
-      "publishReady": false
-    },
-    {
-      "id": "gac-gm8",
-      "title": "GAC GM8 — Luxury Van Promo",
-      "sourcePublishedAt": "2025-01-11",
-      "sourceCategories": [
-        "Интерфейсы",
-        "Анимация"
-      ],
-      "projectYear": null,
-      "personalRole": null,
-      "contributors": null,
-      "summary": null,
-      "cover": null,
-      "media": [],
-      "outcomes": [],
-      "sources": [
+      "media": [
         {
-          "url": "https://dprofile.ru/case/103902/gac-gm8-luxury-van-promo",
-          "kind": "dprofile-index"
+          "src": "media/apcosys/01.webp",
+          "width": 1200,
+          "height": 800,
+          "alt": "APCOSYS — От запроса к исследованию"
         },
         {
-          "url": "https://imon.agency/ru/portfolio/gm8",
-          "kind": "agency-case"
+          "src": "media/apcosys/02.webp",
+          "width": 2880,
+          "height": 1894,
+          "alt": "APCOSYS — От запроса к исследованию"
         }
       ],
-      "recognition": {
-        "platform": "Dprofile",
-        "kind": "recommended",
-        "label": "Рекомендуем",
-        "sourceUrl": "https://dprofile.ru/case/103902/gac-gm8-luxury-van-promo"
-      },
-      "editorialStatus": "needs-role-and-media-review",
-      "publishReady": false
-    },
-    {
-      "id": "six-senses",
-      "title": "Six Senses Residences — Dubai Marina",
-      "sourcePublishedAt": "2025-01-16",
-      "sourceCategories": [
-        "Интерфейсы",
-        "Анимация"
-      ],
-      "projectYear": null,
-      "personalRole": null,
-      "contributors": null,
-      "summary": null,
-      "cover": null,
-      "media": [],
-      "outcomes": [],
-      "sources": [
+      "sections": [
         {
-          "url": "https://dprofile.ru/case/105141/six-senses-residences-dubai-marina",
-          "kind": "dprofile-index"
-        }
-      ],
-      "recognition": null,
-      "editorialStatus": "needs-role-and-media-review",
-      "publishReady": false
-    },
-    {
-      "id": "rocket-group",
-      "title": "Rocket Group — Digital Platform",
-      "sourcePublishedAt": "2025-01-21",
-      "sourceCategories": [
-        "Интерфейсы",
-        "Анимация"
-      ],
-      "projectYear": null,
-      "personalRole": null,
-      "contributors": null,
-      "summary": null,
-      "cover": null,
-      "media": [],
-      "outcomes": [],
-      "sources": [
-        {
-          "url": "https://dprofile.ru/case/103973/rocket-group-digital-platform",
-          "kind": "dprofile-index"
+          "title": "Сложный продукт. Понятное начало.",
+          "text": "Поиск по IP-адресу, домену, порту или технологии — отправная точка исследования. Главная страница объясняет этот сценарий через интерфейс, примеры запросов и последовательный обзор возможностей."
         },
         {
-          "url": "https://imon.agency/ru/portfolio/rocket/",
-          "kind": "agency-case"
+          "title": "Система, которую можно развивать.",
+          "text": "Компоненты, навигация, светлая и тёмная темы образуют общую основу сайта. Демонстрационные сценарии помогают познакомиться с логикой продукта до перехода в рабочую среду."
         }
       ],
+      "sources": [
+        {
+          "url": "https://github.com/IMONsergey/apcoseb-clear",
+          "kind": "project-source"
+        }
+      ],
+      "live": "https://imonsergey.github.io/apcoseb-clear/",
       "recognition": null,
-      "editorialStatus": "needs-role-and-media-review",
-      "publishReady": false
+      "publishReady": true
     },
     {
       "id": "vk-strimmur",
-      "title": "VK — СтримМур",
-      "sourcePublishedAt": null,
-      "sourceCategories": [
-        "Интерфейсы"
+      "title": "VK · СтримМур",
+      "kicker": "Технологии с человеческим теплом",
+      "category": "digital",
+      "summary": "Интерактивный благотворительный проект VK и фонда «Ника». Смотреть, участвовать, помогать.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/vk-streammur/04.webp",
+        "width": 1680,
+        "height": 1294,
+        "alt": "VK · СтримМур — Технологии с человеческим теплом"
+      },
+      "media": [
+        {
+          "src": "media/vk-streammur/00.webp",
+          "width": 1680,
+          "height": 945,
+          "alt": "VK · СтримМур — Технологии с человеческим теплом"
+        },
+        {
+          "src": "media/vk-streammur/05.webp",
+          "width": 1593,
+          "height": 1105,
+          "alt": "VK · СтримМур — Технологии с человеческим теплом"
+        },
+        {
+          "src": "media/vk-streammur/06.webp",
+          "width": 1593,
+          "height": 1313,
+          "alt": "VK · СтримМур — Технологии с человеческим теплом"
+        },
+        {
+          "src": "media/vk-streammur/07.webp",
+          "width": 1593,
+          "height": 1211,
+          "alt": "VK · СтримМур — Технологии с человеческим теплом"
+        }
       ],
-      "projectYear": null,
-      "personalRole": null,
-      "contributors": null,
-      "summary": null,
-      "cover": null,
-      "media": [],
-      "outcomes": [],
+      "sections": [
+        {
+          "title": "Помощь начинается с участия.",
+          "text": "«СтримМур» соединяет прямые эфиры из приюта с благотворительностью. Сайт помогает познакомиться с котами, следить за их жизнью и поддержать фонд."
+        },
+        {
+          "title": "Дружелюбный цифровой мир.",
+          "text": "Голубая палитра, объёмные персонажи и выразительные детали делают важную тему ближе. Интерфейс связывает трансляцию, информацию о проекте и сценарий пожертвования."
+        }
+      ],
       "sources": [
         {
           "url": "https://dprofile.ru/case/107263/vk-strimmur",
@@ -214,9 +266,770 @@
           "kind": "agency-case"
         }
       ],
+      "live": null,
       "recognition": null,
-      "editorialStatus": "needs-role-and-media-review",
-      "publishReady": false
+      "publishReady": true
+    },
+    {
+      "id": "debt-tech",
+      "title": "DEBT TECH",
+      "kicker": "Форум-выставка · 2026",
+      "category": "events",
+      "summary": "Цифровая площадка отраслевого форума: от первого знакомства до участия.",
+      "credit": "Дизайн и цифровая реализация",
+      "year": "2026",
+      "cover": {
+        "src": "media/debt-tech/00.webp",
+        "width": 1270,
+        "height": 687,
+        "alt": "DEBT TECH — Форум-выставка · 2026"
+      },
+      "media": [],
+      "sections": [
+        {
+          "title": "Событие как цифровая система.",
+          "text": "Сайт объединяет информацию о форуме, программу и форматы участия. Выразительный первый экран задаёт масштаб события, а структура помогает перейти к нужному действию."
+        },
+        {
+          "title": "Собрать сложное в понятный маршрут.",
+          "text": "Участникам, партнёрам и экспонентам нужна разная информация. Навигация и страницы проекта организованы вокруг этих сценариев, сохраняя общий визуальный язык."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/IMONsergey/debtupd",
+          "kind": "project-source"
+        }
+      ],
+      "live": "https://debt-tech.ru/",
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "serenity",
+      "title": "Serenity Aviation",
+      "kicker": "Спокойная уверенность",
+      "category": "brand",
+      "summary": "Идентичность для компании в сфере частной авиации. Точность, доверие и сдержанная эстетика.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/serenity/00.webp",
+        "width": 1800,
+        "height": 1200,
+        "alt": "Serenity Aviation — Спокойная уверенность"
+      },
+      "media": [
+        {
+          "src": "media/serenity/01.webp",
+          "width": 1800,
+          "height": 1200,
+          "alt": "Serenity Aviation — Спокойная уверенность"
+        },
+        {
+          "src": "media/serenity/04.webp",
+          "width": 1680,
+          "height": 1259,
+          "alt": "Serenity Aviation — Спокойная уверенность"
+        },
+        {
+          "src": "media/serenity/05.webp",
+          "width": 1800,
+          "height": 1198,
+          "alt": "Serenity Aviation — Спокойная уверенность"
+        },
+        {
+          "src": "media/serenity/06.webp",
+          "width": 1680,
+          "height": 1119,
+          "alt": "Serenity Aviation — Спокойная уверенность"
+        },
+        {
+          "src": "media/serenity/07.webp",
+          "width": 1800,
+          "height": 1111,
+          "alt": "Serenity Aviation — Спокойная уверенность"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Характер через точность.",
+          "text": "Serenity Aviation работает в сфере частной авиации в Саудовской Аравии. В основе визуального языка — мотив радара: ориентир, контроль и внимание к деталям."
+        },
+        {
+          "title": "Из идеи — в повседневный опыт.",
+          "text": "Графитовая и изумрудная палитра, тонкая графика и ясная типографика переходят с фирменных материалов на презентации, деловую документацию и брендированные носители."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://imon.agency/ru/portfolio/serenity/",
+          "kind": "project-source"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "haval",
+      "title": "HAVAL",
+      "kicker": "Dealer Conference",
+      "category": "events",
+      "summary": "Презентационная система дилерской конференции. Масштаб сцены и точность информации.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/haval-dealer-conference/02.webp",
+        "width": 1680,
+        "height": 1213,
+        "alt": "HAVAL — Dealer Conference"
+      },
+      "media": [
+        {
+          "src": "media/haval-dealer-conference/00.webp",
+          "width": 1800,
+          "height": 1803,
+          "alt": "HAVAL — Dealer Conference"
+        },
+        {
+          "src": "media/haval-dealer-conference/01.webp",
+          "width": 1799,
+          "height": 552,
+          "alt": "HAVAL — Dealer Conference"
+        },
+        {
+          "src": "media/haval-dealer-conference/03.webp",
+          "width": 1799,
+          "height": 552,
+          "alt": "HAVAL — Dealer Conference"
+        },
+        {
+          "src": "media/haval-dealer-conference/04.webp",
+          "width": 1680,
+          "height": 1213,
+          "alt": "HAVAL — Dealer Conference"
+        },
+        {
+          "src": "media/haval-dealer-conference/05.webp",
+          "width": 1555,
+          "height": 477,
+          "alt": "HAVAL — Dealer Conference"
+        },
+        {
+          "src": "media/haval-dealer-conference/06.webp",
+          "width": 1555,
+          "height": 477,
+          "alt": "HAVAL — Dealer Conference"
+        },
+        {
+          "src": "media/haval-dealer-conference/07.webp",
+          "width": 1555,
+          "height": 477,
+          "alt": "HAVAL — Dealer Conference"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Будущее в фокусе.",
+          "text": "Образ человека и технологии становится отправной точкой визуального решения. Бирюзовое свечение и тёмный фон объединяют выступления в цельное событие."
+        },
+        {
+          "title": "Информация для большого экрана.",
+          "text": "Тематические блоки, диаграммы и продуктовые слайды адаптированы к сценическому формату. Визуальная иерархия помогает считывать содержание с расстояния."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/103977/haval-dealer-conference",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/haval-dealer-conference/",
+          "kind": "agency-case"
+        }
+      ],
+      "live": null,
+      "recognition": {
+        "platform": "Dprofile",
+        "kind": "recommended",
+        "label": "Рекомендуем",
+        "sourceUrl": "https://dprofile.ru/case/103977/haval-dealer-conference"
+      },
+      "publishReady": true
+    },
+    {
+      "id": "gac-gm8",
+      "title": "GAC GM8",
+      "kicker": "Luxury Van Promo",
+      "category": "digital",
+      "summary": "Промосайт премиального минивэна, в котором продукт становится главным героем.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/gm8/07.webp",
+        "width": 1800,
+        "height": 1675,
+        "alt": "GAC GM8 — Luxury Van Promo"
+      },
+      "media": [
+        {
+          "src": "media/gm8/04.webp",
+          "width": 1590,
+          "height": 1034,
+          "alt": "GAC GM8 — Luxury Van Promo"
+        },
+        {
+          "src": "media/gm8/05.webp",
+          "width": 1590,
+          "height": 1034,
+          "alt": "GAC GM8 — Luxury Van Promo"
+        },
+        {
+          "src": "media/gm8/06.webp",
+          "width": 1334,
+          "height": 866,
+          "alt": "GAC GM8 — Luxury Van Promo"
+        },
+        {
+          "src": "media/gm8/01.webp",
+          "width": 1367,
+          "height": 1026,
+          "alt": "GAC GM8 — Luxury Van Promo"
+        },
+        {
+          "src": "media/gm8/02.webp",
+          "width": 1621,
+          "height": 1217,
+          "alt": "GAC GM8 — Luxury Van Promo"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Показать характер автомобиля.",
+          "text": "Крупные планы, сдержанная палитра и атмосферные изображения раскрывают комфорт и детали GAC GM8. Композиция строится вокруг автомобиля и оставляет ему пространство."
+        },
+        {
+          "title": "От общего впечатления к деталям.",
+          "text": "Навигация ведёт от образа модели к особенностям салона и оснащения. Нестандартная сетка поддерживает визуальный рассказ и помогает разделить смысловые блоки."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/103902/gac-gm8-luxury-van-promo",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/gm8",
+          "kind": "agency-case"
+        }
+      ],
+      "live": null,
+      "recognition": {
+        "platform": "Dprofile",
+        "kind": "recommended",
+        "label": "Рекомендуем",
+        "sourceUrl": "https://dprofile.ru/case/103902/gac-gm8-luxury-van-promo"
+      },
+      "publishReady": true
+    },
+    {
+      "id": "rocket-group",
+      "title": "Rocket Group",
+      "kicker": "Энергия нового дома",
+      "category": "digital",
+      "summary": "Цифровая платформа об энергоэффективных домах и возобновляемой энергии.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/rocket/04.webp",
+        "width": 1217,
+        "height": 899,
+        "alt": "Rocket Group — Энергия нового дома"
+      },
+      "media": [
+        {
+          "src": "media/rocket/02.webp",
+          "width": 1217,
+          "height": 899,
+          "alt": "Rocket Group — Энергия нового дома"
+        },
+        {
+          "src": "media/rocket/03.webp",
+          "width": 905,
+          "height": 602,
+          "alt": "Rocket Group — Энергия нового дома"
+        },
+        {
+          "src": "media/rocket/07.webp",
+          "width": 1217,
+          "height": 1874,
+          "alt": "Rocket Group — Энергия нового дома"
+        },
+        {
+          "src": "media/rocket/00.webp",
+          "width": 1680,
+          "height": 944,
+          "alt": "Rocket Group — Энергия нового дома"
+        },
+        {
+          "src": "media/rocket/06.webp",
+          "width": 474,
+          "height": 2200,
+          "alt": "Rocket Group — Энергия нового дома"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Разные направления. Общая идея.",
+          "text": "Rocket Group объединяет проекты в области домов с нулевым энергопотреблением и чистой энергии. Задача сайта — показать связь направлений и дать каждому собственный маршрут."
+        },
+        {
+          "title": "Природа и технология.",
+          "text": "Простая типографика и строгая сетка соседствуют с природными пейзажами и архитектурой. Каталог моделей и страницы направлений помогают перейти от идеи к конкретному решению."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/103973/rocket-group-digital-platform",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/rocket/",
+          "kind": "agency-case"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "askona",
+      "title": "Askona Life Group",
+      "kicker": "Жизнь во всех направлениях",
+      "category": "digital",
+      "summary": "Корпоративный портал, который связывает бизнесы, историю и ценности группы.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/askona-life-group/01.webp",
+        "width": 1522,
+        "height": 1918,
+        "alt": "Askona Life Group — Жизнь во всех направлениях"
+      },
+      "media": [
+        {
+          "src": "media/askona-life-group/03.webp",
+          "width": 1799,
+          "height": 1212,
+          "alt": "Askona Life Group — Жизнь во всех направлениях"
+        },
+        {
+          "src": "media/askona-life-group/04.webp",
+          "width": 1800,
+          "height": 1216,
+          "alt": "Askona Life Group — Жизнь во всех направлениях"
+        },
+        {
+          "src": "media/askona-life-group/05.webp",
+          "width": 1800,
+          "height": 1216,
+          "alt": "Askona Life Group — Жизнь во всех направлениях"
+        },
+        {
+          "src": "media/askona-life-group/06.webp",
+          "width": 1800,
+          "height": 1212,
+          "alt": "Askona Life Group — Жизнь во всех направлениях"
+        },
+        {
+          "src": "media/askona-life-group/07.webp",
+          "width": 710,
+          "height": 1402,
+          "alt": "Askona Life Group — Жизнь во всех направлениях"
+        },
+        {
+          "src": "media/askona-life-group/02.webp",
+          "width": 1800,
+          "height": 1548,
+          "alt": "Askona Life Group — Жизнь во всех направлениях"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Увидеть компанию целиком.",
+          "text": "Askona Life Group объединяет разные направления бизнеса. Портал выстраивает их в понятную структуру и раскрывает общую идею качества жизни."
+        },
+        {
+          "title": "История в движении.",
+          "text": "Интерактивная хронология, разделы бизнесов и документы формируют несколько уровней знакомства с компанией. Объёмные графические формы связывают эти разделы визуально."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://imon.agency/ru/portfolio/askona-life-group/",
+          "kind": "project-source"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "tochka",
+      "title": "Точка Банк",
+      "kicker": "Банковский Check-Up",
+      "category": "digital",
+      "summary": "Интерактивная диагностика отношений бизнеса с банком — в формате простого квиза.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/tochka/03.webp",
+        "width": 1800,
+        "height": 1321,
+        "alt": "Точка Банк — Банковский Check-Up"
+      },
+      "media": [
+        {
+          "src": "media/tochka/00.webp",
+          "width": 1800,
+          "height": 934,
+          "alt": "Точка Банк — Банковский Check-Up"
+        },
+        {
+          "src": "media/tochka/04.webp",
+          "width": 766,
+          "height": 1646,
+          "alt": "Точка Банк — Банковский Check-Up"
+        },
+        {
+          "src": "media/tochka/05.webp",
+          "width": 1800,
+          "height": 1371,
+          "alt": "Точка Банк — Банковский Check-Up"
+        },
+        {
+          "src": "media/tochka/06.webp",
+          "width": 1800,
+          "height": 1736,
+          "alt": "Точка Банк — Банковский Check-Up"
+        },
+        {
+          "src": "media/tochka/07.webp",
+          "width": 1748,
+          "height": 1132,
+          "alt": "Точка Банк — Банковский Check-Up"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Сложный разговор — простыми вопросами.",
+          "text": "«Банковский Check-Up» предлагает предпринимателю пройти восемь вопросов о повседневной работе с банком. Метафора обследования делает знакомые проблемы наглядными."
+        },
+        {
+          "title": "Характер в каждом шаге.",
+          "text": "Иллюстрации, фиолетовая палитра и разговорный тон сопровождают сценарий. Результат квиза связывает обнаруженные трудности с возможными банковскими решениями."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://imon.agency/ru/portfolio/tochka/",
+          "kind": "project-source"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "pik",
+      "title": "ПИК · Кинотеатриум",
+      "kicker": "Кино начинается во дворе",
+      "category": "digital",
+      "summary": "Сайт фестиваля дворовых кинопоказов: программа, места и атмосфера летнего вечера.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/pik-kinoteatrium/01.webp",
+        "width": 1800,
+        "height": 1481,
+        "alt": "ПИК · Кинотеатриум — Кино начинается во дворе"
+      },
+      "media": [
+        {
+          "src": "media/pik-kinoteatrium/04.webp",
+          "width": 1680,
+          "height": 933,
+          "alt": "ПИК · Кинотеатриум — Кино начинается во дворе"
+        },
+        {
+          "src": "media/pik-kinoteatrium/05.webp",
+          "width": 1680,
+          "height": 1368,
+          "alt": "ПИК · Кинотеатриум — Кино начинается во дворе"
+        },
+        {
+          "src": "media/pik-kinoteatrium/06.webp",
+          "width": 1680,
+          "height": 1370,
+          "alt": "ПИК · Кинотеатриум — Кино начинается во дворе"
+        },
+        {
+          "src": "media/pik-kinoteatrium/07.webp",
+          "width": 1680,
+          "height": 874,
+          "alt": "ПИК · Кинотеатриум — Кино начинается во дворе"
+        },
+        {
+          "src": "media/pik-kinoteatrium/00.webp",
+          "width": 1711,
+          "height": 1726,
+          "alt": "ПИК · Кинотеатриум — Кино начинается во дворе"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Большое событие рядом с домом.",
+          "text": "«Кинотеатриум» приглашает жителей на кинопоказы под открытым небом. Сайт собирает программу фестиваля и помогает найти место встречи."
+        },
+        {
+          "title": "Яркий, открытый, соседский.",
+          "text": "Оранжевый цвет, графика попкорна и билетов создают настроение фестиваля. Информационные блоки ведут от знакомства с событием к выбору фильма и площадки."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://imon.agency/ru/portfolio/pik-kinoteatrium/",
+          "kind": "project-source"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "prp",
+      "title": "PRP",
+      "kicker": "Коммуникации обретают форму",
+      "category": "brand",
+      "summary": "Гибкая визуальная идентичность коммуникационного агентства.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/prp/00.webp",
+        "width": 1800,
+        "height": 1183,
+        "alt": "PRP — Коммуникации обретают форму"
+      },
+      "media": [
+        {
+          "src": "media/prp/01.webp",
+          "width": 1800,
+          "height": 1013,
+          "alt": "PRP — Коммуникации обретают форму"
+        },
+        {
+          "src": "media/prp/02.webp",
+          "width": 1680,
+          "height": 1120,
+          "alt": "PRP — Коммуникации обретают форму"
+        },
+        {
+          "src": "media/prp/03.webp",
+          "width": 1500,
+          "height": 1125,
+          "alt": "PRP — Коммуникации обретают форму"
+        },
+        {
+          "src": "media/prp/04.webp",
+          "width": 1680,
+          "height": 1166,
+          "alt": "PRP — Коммуникации обретают форму"
+        },
+        {
+          "src": "media/prp/05.webp",
+          "width": 1800,
+          "height": 1200,
+          "alt": "PRP — Коммуникации обретают форму"
+        },
+        {
+          "src": "media/prp/06.webp",
+          "width": 1800,
+          "height": 1575,
+          "alt": "PRP — Коммуникации обретают форму"
+        },
+        {
+          "src": "media/prp/07.webp",
+          "width": 1680,
+          "height": 1345,
+          "alt": "PRP — Коммуникации обретают форму"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Система из простых элементов.",
+          "text": "Модульные геометрические формы дают бренду собственный графический язык. Сочетания цветов и элементов помогают сохранять узнаваемость в разных форматах."
+        },
+        {
+          "title": "Узнаваемость в масштабе.",
+          "text": "Паттерн работает на полиграфии, документах, сувенирах и рекламных материалах. Разные носители остаются частью одной системы без буквального повторения композиции."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://imon.agency/ru/portfolio/prp/",
+          "kind": "project-source"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "br-group",
+      "title": "BR Group",
+      "kicker": "Следующий этап бренда",
+      "category": "brand",
+      "summary": "Обновление идентичности компании в сфере криптовалют и блокчейн-консалтинга.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/br-group-branding/00.webp",
+        "width": 1119,
+        "height": 1184,
+        "alt": "BR Group — Следующий этап бренда"
+      },
+      "media": [
+        {
+          "src": "media/br-group-branding/03.webp",
+          "width": 1680,
+          "height": 945,
+          "alt": "BR Group — Следующий этап бренда"
+        },
+        {
+          "src": "media/br-group-branding/04.webp",
+          "width": 1680,
+          "height": 945,
+          "alt": "BR Group — Следующий этап бренда"
+        },
+        {
+          "src": "media/br-group-branding/05.webp",
+          "width": 1240,
+          "height": 1754,
+          "alt": "BR Group — Следующий этап бренда"
+        },
+        {
+          "src": "media/br-group-branding/06.webp",
+          "width": 1240,
+          "height": 1754,
+          "alt": "BR Group — Следующий этап бренда"
+        },
+        {
+          "src": "media/br-group-branding/07.webp",
+          "width": 1652,
+          "height": 1322,
+          "alt": "BR Group — Следующий этап бренда"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Визуальный язык для нового масштаба.",
+          "text": "Ребрендинг отражает развитие компании и усложнение её услуг. Новый знак и графическая система задают более собранный, зрелый образ."
+        },
+        {
+          "title": "Одна основа для разных коммуникаций.",
+          "text": "Монограмма, контрастная палитра и цифровая графика переходят в деловые материалы и презентации. Система позволяет рассказывать о разных направлениях в едином стиле."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://imon.agency/ru/portfolio/br-group-branding/",
+          "kind": "project-source"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "vrt-world",
+      "title": "VRT World",
+      "kicker": "Новые измерения бизнеса",
+      "category": "brand",
+      "summary": "Визуальный язык для экосистемы виртуальной реальности.",
+      "credit": "Проект I’MON",
+      "year": null,
+      "cover": {
+        "src": "media/vrtworld/00.webp",
+        "width": 1680,
+        "height": 945,
+        "alt": "VRT World — Новые измерения бизнеса"
+      },
+      "media": [
+        {
+          "src": "media/vrtworld/05.webp",
+          "width": 1800,
+          "height": 1651,
+          "alt": "VRT World — Новые измерения бизнеса"
+        },
+        {
+          "src": "media/vrtworld/06.webp",
+          "width": 902,
+          "height": 1183,
+          "alt": "VRT World — Новые измерения бизнеса"
+        },
+        {
+          "src": "media/vrtworld/07.webp",
+          "width": 905,
+          "height": 524,
+          "alt": "VRT World — Новые измерения бизнеса"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Технология, у которой есть характер.",
+          "text": "VRT World развивает решения в виртуальной реальности. Минималистичная графическая система помогает собрать технологические продукты в узнаваемый бренд."
+        },
+        {
+          "title": "От идентичности к коммуникации.",
+          "text": "Насыщенный синий цвет, чёткая типографика и визуальные мотивы VR создают основу для цифровых материалов и социальных сетей."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://imon.agency/ru/portfolio/vrtworld/",
+          "kind": "project-source"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
+    },
+    {
+      "id": "six-senses",
+      "title": "Six Senses",
+      "kicker": "Residences · Dubai Marina",
+      "category": "digital",
+      "summary": "Интерфейсы и анимация для Six Senses Residences Dubai Marina.",
+      "credit": "Из личного портфолио",
+      "year": null,
+      "cover": null,
+      "media": [],
+      "sections": [
+        {
+          "title": "Продолжение — на Dprofile.",
+          "text": "Визуальная история проекта опубликована в моём портфолио на Dprofile. Перейдите к оригинальной публикации, чтобы посмотреть материалы кейса."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/105141/six-senses-residences-dubai-marina",
+          "kind": "dprofile-index"
+        }
+      ],
+      "live": null,
+      "recognition": null,
+      "publishReady": true
     }
   ]
 }
