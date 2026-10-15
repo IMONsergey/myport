@@ -1,8 +1,10 @@
+import {initMotion} from './motion.js';
 import {initWave} from './wave.js';
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let motionPaused=reduceMotion.matches;
-const wave=initWave(document.querySelector('.wave-canvas'));
-const videos=[...document.querySelectorAll('video')], visibleVideos=new Set();
+const wave=initWave(document.querySelector('.hero-stage .wave-canvas'));
+const motion=initMotion(()=>motionPaused);
+const videos=[...document.querySelectorAll('video:not(#showreel video)')], visibleVideos=new Set();
 function playVideo(video){
  if(motionPaused||document.hidden||!visibleVideos.has(video)){video.pause();return;}
  const source=video.querySelector('source[data-src]');
@@ -17,18 +19,11 @@ function applyMotion(){
  document.body.classList.toggle('motion-paused',motionPaused);
  motionButton?.setAttribute('aria-pressed',String(motionPaused));
  if(motionButton)motionButton.textContent=motionPaused?'Включить анимацию':'Пауза анимации';
- videos.forEach(playVideo);updateScroll();
+ videos.forEach(playVideo);motion.refresh();
 }
 motionButton?.addEventListener('click',()=>{motionPaused=!motionPaused;applyMotion();});
 reduceMotion.addEventListener('change',()=>{motionPaused=reduceMotion.matches;applyMotion();});
 document.addEventListener('visibilitychange',()=>videos.forEach(playVideo));
-
-const menu=document.querySelector('#menu'),menuButton=document.querySelector('.menu-button');
-menuButton?.addEventListener('click',()=>{menu.showModal();document.body.classList.add('menu-is-open');menuButton.setAttribute('aria-expanded','true');});
-const closeMenu=()=>menu.close();
-document.querySelector('.menu-close')?.addEventListener('click',closeMenu);
-menu?.addEventListener('close',()=>{document.body.classList.remove('menu-is-open');menuButton.setAttribute('aria-expanded','false');menuButton.focus();});
-menu?.addEventListener('click',event=>{if(event.target===menu)closeMenu();});
 
 function filterProjects(category){
  const valid=['all','digital','brand','events'];if(!valid.includes(category))category='all';
@@ -41,27 +36,15 @@ if(document.querySelector('.catalogue'))filterProjects(new URLSearchParams(locat
 
 const stage=document.querySelector('.services-stage');
 function selectService(button){
+ if(button.getAttribute('aria-pressed')==='true'&&stage.classList.contains('is-active'))return;
  stage.classList.add('is-active');
  document.querySelectorAll('[data-service]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
  document.querySelectorAll('[data-service-image]').forEach(image=>image.classList.toggle('active',image.dataset.serviceImage===button.dataset.service));
- stage.querySelector('.service-description p').textContent=button.dataset.description;
+ const copy=stage.querySelector('.service-description');copy.textContent=button.dataset.description;
+ if(!motionPaused)copy.animate([{opacity:0,transform:'translateY(12px)'},{opacity:1,transform:'none'}],{duration:400,easing:'cubic-bezier(.16,.37,.56,1)'});
 }
 document.querySelectorAll('[data-service]').forEach(button=>{['pointerenter','focus','click'].forEach(event=>button.addEventListener(event,()=>selectService(button)));});
-stage?.addEventListener('pointerleave',()=>stage.classList.remove('is-active'));
-
-const hero=document.querySelector('.hero-content'),heroStack=document.querySelector('.hero-stack'),vision=document.querySelector('.vision');
-let scrollFrame=0;
-function updateScroll(){
- scrollFrame=0;
- if(heroStack)document.body.classList.toggle('past-hero',heroStack.getBoundingClientRect().bottom<=64);
- if(hero){const progress=motionPaused?0:Math.max(0,Math.min(1,-heroStack.getBoundingClientRect().top/(heroStack.offsetHeight-innerHeight)));hero.style.opacity=String(1-progress*.7);hero.style.transform=`translateY(${-progress*80}px)`;}
- if(vision){const rect=vision.getBoundingClientRect();vision.style.setProperty('--word-shift',motionPaused?'0px':`${Math.max(-180,Math.min(0,(rect.top-innerHeight)*.12))}px`);}
-}
-window.addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(updateScroll);},{passive:true});
-const revealObserver=new IntersectionObserver(entries=>entries.forEach(({target,isIntersecting})=>{if(!isIntersecting)return;revealObserver.unobserve(target);if(!motionPaused)target.animate([{opacity:.3,transform:'translateY(35px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)'});}),{threshold:.15});
-document.querySelectorAll('[data-reveal]').forEach(el=>revealObserver.observe(el));
-const glow=document.querySelector('.cursor-glow');
-if(matchMedia('(pointer:fine)').matches){document.addEventListener('pointermove',event=>{if(!glow||motionPaused)return;glow.style.left=`${event.clientX}px`;glow.style.top=`${event.clientY}px`;glow.style.opacity='.55';},{passive:true});document.addEventListener('pointerleave',()=>{if(glow)glow.style.opacity='0';});}
+stage?.addEventListener('pointerleave',event=>{if(event.pointerType==='touch')return;stage.classList.remove('is-active');document.querySelectorAll('[data-service]').forEach(b=>b.setAttribute('aria-pressed','false'));});
 
 const toast=document.querySelector('.toast');let toastTimer;
 function notify(text){toast.textContent=text;toast.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('visible'),3500);}
