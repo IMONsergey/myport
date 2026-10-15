@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-10-15",
+  "status": "editorial-draft",
+  "sourceCaveat": "Dprofile is in maintenance mode. Metadata was retrieved from the search index; project year and personal role are not inferred from publication dates or profile association.",
+  "projects": [
+    {
+      "id": "avito-avto",
+      "title": "Avito Avto Conf. — Высшая передача",
+      "sourcePublishedAt": "2025-06-12",
+      "sourceCategories": [
+        "Графика",
+        "Маркетинг"
+      ],
+      "projectYear": null,
+      "personalRole": null,
+      "contributors": null,
+      "summary": null,
+      "cover": null,
+      "media": [],
+      "outcomes": [],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/127005/avito-avto-conf-vyssaia-peredaca",
+          "kind": "dprofile-index"
+        }
+      ],
+      "recognition": {
+        "platform": "Dprofile",
+        "kind": "best",
+        "label": "В лучшем на Dprofile",
+        "sourceUrl": "https://dprofile.ru/case/127005/avito-avto-conf-vyssaia-peredaca"
+      },
+      "editorialStatus": "needs-role-and-media-review",
+      "publishReady": false
+    },
+    {
+      "id": "orla",
+      "title": "ORLA, Dorchester Collection Dubai",
+      "sourcePublishedAt": "2025-01-03",
+      "sourceCategories": [
+        "Интерфейсы",
+        "Анимация"
+      ],
+      "projectYear": null,
+      "personalRole": null,
+      "contributors": null,
+      "summary": null,
+      "cover": null,
+      "media": [],
+      "outcomes": [],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/103839/orla-dorchester-collection-dubai",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/orla",
+          "kind": "agency-case"
+        }
+      ],
+      "recognition": {
+        "platform": "Dprofile",
+        "kind": "recommended",
+        "label": "Рекомендуем",
+        "sourceUrl": "https://dprofile.ru/case/103839/orla-dorchester-collection-dubai"
+      },
+      "editorialStatus": "needs-role-and-media-review",
+      "publishReady": false
+    },
+    {
+      "id": "haval",
+      "title": "Haval — Dealer Conference",
+      "sourcePublishedAt": "2025-01-05",
+      "sourceCategories": [
+        "Графика",
+        "Маркетинг"
+      ],
+      "projectYear": null,
+      "personalRole": null,
+      "contributors": null,
+      "summary": null,
+      "cover": null,
+      "media": [],
+      "outcomes": [],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/103977/haval-dealer-conference",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/haval-dealer-conference/",
+          "kind": "agency-case"
+        }
+      ],
+      "recognition": {
+        "platform": "Dprofile",
+        "kind": "recommended",
+        "label": "Рекомендуем",
+        "sourceUrl": "https://dprofile.ru/case/103977/haval-dealer-conference"
+      },
+      "editorialStatus": "needs-role-and-media-review",
+      "publishReady": false
+    },
+    {
+      "id": "gac-gm8",
+      "title": "GAC GM8 — Luxury Van Promo",
+      "sourcePublishedAt": "2025-01-11",
+      "sourceCategories": [
+        "Интерфейсы",
+        "Анимация"
+      ],
+      "projectYear": null,
+      "personalRole": null,
+      "contributors": null,
+      "summary": null,
+      "cover": null,
+      "media": [],
+      "outcomes": [],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/103902/gac-gm8-luxury-van-promo",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/gm8",
+          "kind": "agency-case"
+        }
+      ],
+      "recognition": {
+        "platform": "Dprofile",
+        "kind": "recommended",
+        "label": "Рекомендуем",
+        "sourceUrl": "https://dprofile.ru/case/103902/gac-gm8-luxury-van-promo"
+      },
+      "editorialStatus": "needs-role-and-media-review",
+      "publishReady": false
+    },
+    {
+      "id": "six-senses",
+      "title": "Six Senses Residences — Dubai Marina",
+      "sourcePublishedAt": "2025-01-16",
+      "sourceCategories": [
+        "Интерфейсы",
+        "Анимация"
+      ],
+      "projectYear": null,
+      "personalRole": null,
+      "contributors": null,
+      "summary": null,
+      "cover": null,
+      "media": [],
+      "outcomes": [],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/105141/six-senses-residences-dubai-marina",
+          "kind": "dprofile-index"
+        }
+      ],
+      "recognition": null,
+      "editorialStatus": "needs-role-and-media-review",
+      "publishReady": false
+    },
+    {
+      "id": "rocket-group",
+      "title": "Rocket Group — Digital Platform",
+      "sourcePublishedAt": "2025-01-21",
+      "sourceCategories": [
+        "Интерфейсы",
+        "Анимация"
+      ],
+      "projectYear": null,
+      "personalRole": null,
+      "contributors": null,
+      "summary": null,
+      "cover": null,
+      "media": [],
+      "outcomes": [],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/103973/rocket-group-digital-platform",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/rocket/",
+          "kind": "agency-case"
+        }
+      ],
+      "recognition": null,
+      "editorialStatus": "needs-role-and-media-review",
+      "publishReady": false
+    },
+    {
+      "id": "vk-strimmur",
+      "title": "VK — СтримМур",
+      "sourcePublishedAt": null,
+      "sourceCategories": [
+        "Интерфейсы"
+      ],
+      "projectYear": null,
+      "personalRole": null,
+      "contributors": null,
+      "summary": null,
+      "cover": null,
+      "media": [],
+      "outcomes": [],
+      "sources": [
+        {
+          "url": "https://dprofile.ru/case/107263/vk-strimmur",
+          "kind": "dprofile-index"
+        },
+        {
+          "url": "https://imon.agency/ru/portfolio/vk-streammur/",
+          "kind": "agency-case"
+        }
+      ],
+      "recognition": null,
+      "editorialStatus": "needs-role-and-media-review",
+      "publishReady": false
+    }
+  ]
+}
