@@ -1,8 +1,6 @@
 import {initMotion} from './motion.js';
-import {initWave} from './wave.js';
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let motionPaused=reduceMotion.matches;
-const wave=initWave(document.querySelector('.hero-stage .wave-canvas'));
 const motion=initMotion(()=>motionPaused);
 const videos=[...document.querySelectorAll('video:not(#showreel video)')], visibleVideos=new Set();
 function playVideo(video){
@@ -15,7 +13,6 @@ const videoObserver=new IntersectionObserver(entries=>entries.forEach(({target,i
 videos.forEach(video=>videoObserver.observe(video));
 const motionButton=document.querySelector('.motion-toggle');
 function applyMotion(){
- wave.setPaused(motionPaused);
  document.body.classList.toggle('motion-paused',motionPaused);
  motionButton?.setAttribute('aria-pressed',String(motionPaused));
  if(motionButton)motionButton.textContent=motionPaused?'Включить анимацию':'Пауза анимации';

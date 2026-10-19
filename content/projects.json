@@ -184,6 +184,72 @@
           "width": 2880,
           "height": 1894,
           "alt": "APCOSYS — От запроса к исследованию"
+        },
+        {
+          "src": "media/apcosys/capture-01.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Первый экран сайта APCOSYS"
+        },
+        {
+          "src": "media/apcosys/capture-02.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Поиск и первичные результаты APCOSYS"
+        },
+        {
+          "src": "media/apcosys/capture-03.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Сценарий исследования: этапы поиска"
+        },
+        {
+          "src": "media/apcosys/capture-04.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Примеры пользовательских сценариев APCOSYS"
+        },
+        {
+          "src": "media/apcosys/capture-05.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Описание инструментов исследования"
+        },
+        {
+          "src": "media/apcosys/capture-06.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "API и интеграции APCOSYS"
+        },
+        {
+          "src": "media/apcosys/capture-detail-01.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Поиск и расследования — страница продукта"
+        },
+        {
+          "src": "media/apcosys/capture-detail-02.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Мониторинг и состояния наблюдения"
+        },
+        {
+          "src": "media/apcosys/capture-detail-03.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "API и документация продукта"
+        },
+        {
+          "src": "media/apcosys/capture-mobile-01.webp",
+          "width": 390,
+          "height": 844,
+          "alt": "APCOSYS — мобильный интерфейс, кадр 1"
+        },
+        {
+          "src": "media/apcosys/capture-mobile-02.webp",
+          "width": 390,
+          "height": 844,
+          "alt": "APCOSYS — мобильный интерфейс, кадр 2"
         }
       ],
       "sections": [
@@ -284,7 +350,56 @@
         "height": 687,
         "alt": "DEBT TECH — Форум-выставка · 2026"
       },
-      "media": [],
+      "media": [
+        {
+          "src": "media/debt-tech/capture-01.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Первый экран форума DEBT TECH 2026"
+        },
+        {
+          "src": "media/debt-tech/capture-02.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Раздел форматов участия в форуме"
+        },
+        {
+          "src": "media/debt-tech/capture-03.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Ключевые темы форума DEBT TECH"
+        },
+        {
+          "src": "media/debt-tech/capture-04.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Секция спикеров форума"
+        },
+        {
+          "src": "media/debt-tech/capture-05.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Интерактивная экспозиция DEBT TECH"
+        },
+        {
+          "src": "media/debt-tech/capture-06.webp",
+          "width": 1440,
+          "height": 900,
+          "alt": "Тарифы участия в форуме"
+        },
+        {
+          "src": "media/debt-tech/capture-mobile-01.webp",
+          "width": 390,
+          "height": 844,
+          "alt": "DEBT TECH — мобильный интерфейс, кадр 1"
+        },
+        {
+          "src": "media/debt-tech/capture-mobile-02.webp",
+          "width": 390,
+          "height": 844,
+          "alt": "DEBT TECH — мобильный интерфейс, кадр 2"
+        }
+      ],
       "sections": [
         {
           "title": "Событие как цифровая система.",

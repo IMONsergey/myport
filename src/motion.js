@@ -1,13 +1,11 @@
 import Lenis from './vendor/lenis.js';
-import {initWave} from './wave.js';
-// Native reconstruction of Uncoded's published motion components.
-// Parameters, source components and responsive differences: docs/motion-map.md.
+// Lightweight portfolio motion: scroll scenes, dialogs and progressive reveals.
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
 const tween='cubic-bezier(.16,.37,.56,1)';
 const enterEase='cubic-bezier(.08,.37,.56,1)';
 export function initMotion(isPaused){
   const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-  const animations=new Set();let menuWave;
+  const animations=new Set();
   const smoothScroll=new Lenis({smoothWheel:!isPaused(),infinite:false,orientation:'vertical',gestureOrientation:'vertical',autoRaf:true,anchors:true,allowNestedScroll:true,syncTouch:false,stopInertiaOnNavigate:true});
   function animate(el,frames,options){
     if(!el||isPaused())return null;
@@ -17,7 +15,7 @@ export function initMotion(isPaused){
   // Each word is kept intact while its letters reveal independently.
   function splitText(el){
     if(el.dataset.split)return [...el.querySelectorAll('.motion-char')];
-    el.dataset.split='true';el.setAttribute('aria-label',el.innerText.replace(/\s+/g,' ').trim());
+    el.dataset.split='true';const readable=el.innerText.replace(/\s+/g,' ').trim();
     const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];
     while(walker.nextNode())nodes.push(walker.currentNode);
     for(const node of nodes){
@@ -31,6 +29,7 @@ export function initMotion(isPaused){
       }
       node.replaceWith(fragment);
     }
+    const sr=document.createElement('span');sr.className='sr-only';sr.textContent=readable;el.prepend(sr);
     return [...el.querySelectorAll('.motion-char')];
   }
   const scrubs=$$('[data-scrub]').map((el,j)=>{
@@ -106,7 +105,7 @@ export function initMotion(isPaused){
       img.style.transform=paused?'none':`translate3d(0,${(p-.5)*travel}px,0) scale(${1+travel/Math.max(1,rect.height)})`;
     }
   }
-  function refresh(){smoothScroll.options.smoothWheel=!isPaused();menuWave?.setPaused(isPaused()||!$('#menu').open);if(isPaused())animations.forEach(a=>a.finish());if(!scheduled)scheduled=requestAnimationFrame(render);}
+  function refresh(){smoothScroll.options.smoothWheel=!isPaused();if(isPaused())animations.forEach(a=>a.finish());if(!scheduled)scheduled=requestAnimationFrame(render);}
   addEventListener('scroll',refresh,{passive:true});addEventListener('resize',refresh,{passive:true});
   document.fonts.ready.then(refresh);new ResizeObserver(refresh).observe(document.body);
   // Dialogs keep focus trapping active throughout their exit animation.
@@ -117,11 +116,9 @@ export function initMotion(isPaused){
     if(!dialog||!trigger)return;let closing=false;
     function open(){if(dialog.open)return;lock();dialog.showModal();trigger.setAttribute('aria-expanded','true');
       animate(dialog,reel?[{opacity:0,transform:'translateY(1100px)'},{opacity:1,transform:'none'}]:[{opacity:0,transform:'translateY(-300px)'},{opacity:1,transform:'none'}],{duration:600,easing:reel?'cubic-bezier(.06,.6,.4,.98)':'cubic-bezier(.04,.44,.56,1)'});
-      if(reel){const video=dialog.querySelector('video'),source=video.querySelector('source');if(source.dataset.src){source.src=source.dataset.src;delete source.dataset.src;video.load();}video.play().catch(()=>{});}
+      if(reel){const video=dialog.querySelector('video'),source=video?.querySelector('source');if(source?.dataset.src){source.src=source.dataset.src;delete source.dataset.src;video.load();}video?.play().catch(()=>{});}
       else {
-        if(!menuWave)menuWave=initWave(dialog.querySelector('canvas'),{colors:[[165,197,209],[255,255,255]],speed:.2,frequency:5.4,angle:-42});
-        menuWave.setPaused(isPaused());
-        animate(dialog.querySelector('canvas'),[{opacity:0,transform:'rotateX(90deg)'},{opacity:1,transform:'none'}],{duration:400,easing:'cubic-bezier(.2,1.2,.6,1)'});
+                animate(dialog.querySelector('canvas'),[{opacity:0,transform:'rotateX(90deg)'},{opacity:1,transform:'none'}],{duration:400,easing:'cubic-bezier(.2,1.2,.6,1)'});
         [...dialog.querySelectorAll('.menu-links>a')].forEach((el,i)=>animate(el,[{translate:'0 80px'},{translate:'0 0'}],{duration:600,delay:100+i*50,easing:'cubic-bezier(.04,.44,.56,1)',fill:'backwards'}));
         animate(dialog.querySelector('.menu-portrait img'),[{opacity:0,translate:'0 80px'},{opacity:1,translate:'0 0'}],{duration:600,delay:100,easing:'cubic-bezier(.04,.44,.56,1)',fill:'backwards'});
         [...dialog.querySelectorAll('.menu-portrait>a,.menu-social')].forEach(el=>animate(el,[{opacity:0,translate:'0 30px'},{opacity:1,translate:'0 0'}],{duration:600,delay:250,easing:'cubic-bezier(.04,.44,.56,1)',fill:'backwards'}));
@@ -134,7 +131,7 @@ export function initMotion(isPaused){
     trigger.addEventListener('click',open);closeButton.addEventListener('click',close);
     dialog.addEventListener('cancel',event=>{event.preventDefault();close();});
     dialog.addEventListener('click',event=>{if(event.target===dialog)close();});
-    dialog.addEventListener('close',()=>{dialog.querySelector('video')?.pause();if(!reel)menuWave?.setPaused(true);trigger.setAttribute('aria-expanded','false');unlock();trigger.focus({preventScroll:true});});
+    dialog.addEventListener('close',()=>{dialog.querySelector('video')?.pause();trigger.setAttribute('aria-expanded','false');unlock();trigger.focus({preventScroll:true});});
   }
   setupDialog($('#menu'),$('.menu-button'),$('.menu-close'));
   setupDialog($('#showreel'),$('.hero-film'),$('.reel-close'),true);
