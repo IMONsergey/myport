@@ -17,7 +17,7 @@ export function initMotion(isPaused){
   // Each word is kept intact while its letters reveal independently.
   function splitText(el){
     if(el.dataset.split)return [...el.querySelectorAll('.motion-char')];
-    el.dataset.split='true';el.setAttribute('aria-label',el.innerText.replace(/\s+/g,' ').trim());
+    el.dataset.split='true';const readable=el.innerText.replace(/\s+/g,' ').trim();
     const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];
     while(walker.nextNode())nodes.push(walker.currentNode);
     for(const node of nodes){
@@ -31,6 +31,7 @@ export function initMotion(isPaused){
       }
       node.replaceWith(fragment);
     }
+    const sr=document.createElement('span');sr.className='sr-only';sr.textContent=readable;el.prepend(sr);
     return [...el.querySelectorAll('.motion-char')];
   }
   const scrubs=$$('[data-scrub]').map((el,j)=>{

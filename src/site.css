@@ -21,3 +21,13 @@
 .motion-paused .wave-background::before{animation-play-state:paused}
 @keyframes wave-fallback{from{transform:translate(-1.5%,1%) scale(1.02)}to{transform:translate(1.5%,-1%) scale(1.06)}}
 @media(prefers-reduced-motion:reduce){.wave-background::before{animation:none;will-change:auto}}
+
+/* Preserve the oversize headline while avoiding clipping at tablet widths. */
+@media(min-width:810px) and (max-width:1199px){.contact-heading h1{font-size:15.6vw}}
+
+/* Contrast and touch targets within the original monochrome design. */
+.practice-stories a small{color:#8e8e8e}
+@media(max-width:809px){.footer-contact>a{min-height:29px;padding-block:4px}}
+
+/* Long Cyrillic project name at 320 px: preserve case grid without overflow. */
+@media(max-width:359px){.case--pik .case-heading h1{font-size:51px}}
